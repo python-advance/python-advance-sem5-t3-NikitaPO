@@ -25,14 +25,17 @@
             fn()
             print("Stop function")
         return wrapper
-    Обернем наши функции в эту оболочку.
 
-first_test_wrapped = simple_decore(first_test)
-second_test_wrapped = simple_decore(second_test)
+Обернем наши функции в эту оболочку.
+
+    first_test_wrapped = simple_decore(first_test)
+    second_test_wrapped = simple_decore(second_test)
+    
 Функции first_test и second_test остались неизменными.
 
     >>> first_test()
     Test function 1
     >>> second_test()
     Test function 2
+    
 Функции first_test_wrapped и second_test_wrapped  обладают функционалом, которого мы добивались.
